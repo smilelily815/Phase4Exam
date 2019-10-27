@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: /phase4Exam
+  port: 8080
+
+spring:
+  # DB Configuration
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/exam?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  #JPA Configuration
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
