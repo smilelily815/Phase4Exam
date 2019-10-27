@@ -17,7 +17,7 @@ public class User {
      * 姓名
      */
     @Column(name = "username")
-    private String userName;
+    private String username;
 
     /**
      * 密码
@@ -35,7 +35,7 @@ public class User {
      * 联系方式
      */
     @Column(name = "phonenum")
-    private String phoneNum;
+    private String phonenum;
 
     public Long getId() {
         return id;
@@ -45,12 +45,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -69,22 +69,22 @@ public class User {
         this.email = email;
     }
 
-    public String getPhoneNum() {
-        return phoneNum;
+    public String getPhonenum() {
+        return phonenum;
     }
 
-    public void setPhoneNum(String phoneNum) {
-        this.phoneNum = phoneNum;
+    public void setPhonenum(String phonenum) {
+        this.phonenum = phonenum;
     }
 
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
+                ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
-                ", phoneNum='" + phoneNum + '\'' +
+                ", phonenum='" + phonenum + '\'' +
                 '}';
     }
 }
